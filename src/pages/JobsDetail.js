@@ -12,7 +12,6 @@ export default function JobsDetail() {
 
     const getDataJobsDetail = async () => {
         setLoading(true)
-        console.log("wind", window.location)
         let id = window.location.hash.replace("#/jobs/", "")
         let url = `${process.env.REACT_APP_CORS}/${process.env.REACT_APP_BASE_URL}/positions/${id}`
         try {
