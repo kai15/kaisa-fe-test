@@ -13,7 +13,7 @@ export default function App() {
   return (
       <HashRouter  history={Router.browserHistory}>
           <div>
-              <div className={"header-color padding-10px-50px"}>
+              <div className={"header-color padding-10px-50px"} style={{cursor: "pointer"}} onClick={() => window.location.assign("#/")}>
                   <h2 className={"text-white text-bold"}>GitHub <span className={"text-thin"}>Jobs</span></h2>
               </div>
               <Routes>
