@@ -16,7 +16,7 @@ export default function Jobs() {
     const getDataJobs = async (page) => {
         setLoading(true)
         setTimeout(async () => {
-            let url = `${process.env.REACT_APP_BASE_URL}/positions.json?page=${page}`;
+            let url = `${process.env.REACT_APP_CORS}/${process.env.REACT_APP_BASE_URL}/positions.json?page=${page}`;
             try {
                 let response = await fetch(url)
                 response = await response.json()
@@ -40,7 +40,7 @@ export default function Jobs() {
     const getFilterDataJobs = async () => {
         setOnSearch(true);
         setLoading(true);
-        let url = `${process.env.REACT_APP_BASE_URL}/positions.json?description=${filterDescription}&location=${filterLocation}&full_time=${filterFullTime}`;
+        let url = `${process.env.REACT_APP_CORS}/${process.env.REACT_APP_BASE_URL}/positions.json?description=${filterDescription}&location=${filterLocation}&full_time=${filterFullTime}`;
         try {
             let response = await fetch(url)
             response = await response.json()
@@ -98,7 +98,7 @@ export default function Jobs() {
                                     var created = moment(item?.created_at);
                                     let diff = current.diff(created, 'days');
                                 return (
-                                    <div className={"text-13 text-gray padding-5px"} key={index} style={{cursor: "pointer"}} onClick={() => window.location.assign(`/jobs/${item?.id}`)}>
+                                    <div className={"text-13 text-gray padding-5px"} key={index} style={{cursor: "pointer"}} onClick={() => window.location.assign(`#/jobs/${item?.id}`)}>
                                         <div className={"display-flex"}>
                                             <div style={{width: "50%"}}>
                                                 <div className={"text-blue text-bold"}>{item?.title}</div>

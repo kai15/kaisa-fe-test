@@ -12,8 +12,9 @@ export default function JobsDetail() {
 
     const getDataJobsDetail = async () => {
         setLoading(true)
-        let id = window.location.pathname.replace("/jobs/", "")
-        let url = `${process.env.REACT_APP_BASE_URL}/positions/${id}`
+        console.log("wind", window.location)
+        let id = window.location.hash.replace("#/jobs/", "")
+        let url = `${process.env.REACT_APP_CORS}/${process.env.REACT_APP_BASE_URL}/positions/${id}`
         try {
             let response = await fetch(url)
             response = await response.json()
@@ -30,7 +31,7 @@ export default function JobsDetail() {
     return (
         <>
             <div className={"content"}>
-                <div className={"text-12 text-bold text-blue padding-10px"} style={{cursor: "pointer"}} onClick={() => window.location.assign("/jobs")}>
+                <div className={"text-12 text-bold text-blue padding-10px"} style={{cursor: "pointer"}} onClick={() => window.location.assign("#/jobs")}>
                     <i className="fas fa-long-arrow-alt-left" style={{marginRight: 5}}></i> Back
                 </div>
                 <div className={"job-list-detail"}>

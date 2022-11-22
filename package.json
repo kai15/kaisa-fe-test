@@ -2,7 +2,7 @@
   "name": "kaisa-fe-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kai15.github.io/kaisa-fe-test/#",
+  "homepage": "https://kai15.github.io/kaisa-fe-test/#/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
