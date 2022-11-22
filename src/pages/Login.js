@@ -10,6 +10,11 @@ export default function Login() {
         window.location.assign("#/jobs")
     }
 
+    const responseGoogle = response => {
+        console.log(response);
+        window.location.assign("#/jobs")
+    }
+
 
     return (
         <>
@@ -19,13 +24,11 @@ export default function Login() {
                     <div className={"padding-5px"}>
                         <GoogleLogin
                             clientId="491004959702-3bgqo54pt777f77dgl7cqd6s7e7rii81.apps.googleusercontent.com"
-
-                            // buttonText={`${text.GMAIL ? ` ${text.GMAIL}` : 'LOGIN WITH GOOGLE'}`}
-                            // onSuccess={responseGoogle}
-                            // onFailure={responseGoogle}
+                            // clientId="797228037598-7ai1nffcmu9ikr1dtie99r49hu9kjgsv.apps.googleusercontent.com"
+                            onSuccess={responseGoogle}
+                            onFailure={responseGoogle}
                             cookiePolicy={"single_host_origin"}
                             className="GOOGLE"
-
                         />
                     </div>
                     <div className={"padding-5px"}>
