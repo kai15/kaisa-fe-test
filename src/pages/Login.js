@@ -12,7 +12,7 @@ export default function Login() {
 
     const responseGoogle = response => {
         console.log(response);
-        window.location.assign("#/jobs")
+        if (!response?.error) window.location.assign("#/jobs")
     }
 
 
@@ -23,8 +23,9 @@ export default function Login() {
                     <h3 className={"margin-5px-0px text-dark-blue"}>Sign In</h3>
                     <div className={"padding-5px"}>
                         <GoogleLogin
-                            clientId="491004959702-3bgqo54pt777f77dgl7cqd6s7e7rii81.apps.googleusercontent.com"
-                            // clientId="797228037598-7ai1nffcmu9ikr1dtie99r49hu9kjgsv.apps.googleusercontent.com"
+                            // clientId="491004959702-3bgqo54pt777f77dgl7cqd6s7e7rii81.apps.googleusercontent.com"
+                            clientId="797228037598-8nsltg7vqlrmpvl8nii2ke5ihs1r5e26.apps.googleusercontent.com"
+                            // clientId="797228037598-fimn0s2msvcu3276qletufkbbktd6a5a.apps.googleusercontent.com"
                             onSuccess={responseGoogle}
                             onFailure={responseGoogle}
                             cookiePolicy={"single_host_origin"}
