@@ -1,3 +1,8 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e9eaec;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +31,125 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.background-light-gray {
+  background-color: #e9eaec;
+}
+
+h2 {
+  margin: 0;
+}
+
+input {
+  margin-top: 5px;
+  border: 2px solid lightgray;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.text-11 {
+  font-size: 11px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-blue {
+  color: #3e77b6;
+}
+
+.text-dark-blue {
+  color: #002f5c;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-thin {
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.width-5 {
+  width: 4.9999%;
+}
+
+.width-10 {
+  width: 9.9999%;
+}
+
+.width-15 {
+  width: 14.9999%;
+}
+
+.width-30 {
+  width: 29.9999%;
+}
+
+.width-35 {
+  width: 34.9999%;
+}
+
+.width-40 {
+  width: 39.9999%;
+}
+
+.width-50 {
+  width: 49.9999%;
+}
+
+.width-60 {
+  width: 59.9999%;
+}
+
+.width-65 {
+  width: 64.9999%;
+}
+
+.width-70 {
+  width: 69.9999%;
+}
+
+.padding-5px {
+  padding: 5px;
+}
+
+.padding-10px {
+  padding: 10px;
+}
+
+.margin-5px {
+  margin: 5px;
 }
 
 @keyframes App-logo-spin {
