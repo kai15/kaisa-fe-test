@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kaisa-fe-test/static/css/main.2747e2c7.css",
-    "main.js": "/kaisa-fe-test/static/js/main.c5053ff4.js",
+    "main.js": "/kaisa-fe-test/static/js/main.7ce02ce2.js",
     "static/js/787.851df1d6.chunk.js": "/kaisa-fe-test/static/js/787.851df1d6.chunk.js",
     "index.html": "/kaisa-fe-test/index.html",
     "main.2747e2c7.css.map": "/kaisa-fe-test/static/css/main.2747e2c7.css.map",
-    "main.c5053ff4.js.map": "/kaisa-fe-test/static/js/main.c5053ff4.js.map",
+    "main.7ce02ce2.js.map": "/kaisa-fe-test/static/js/main.7ce02ce2.js.map",
     "787.851df1d6.chunk.js.map": "/kaisa-fe-test/static/js/787.851df1d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2747e2c7.css",
-    "static/js/main.c5053ff4.js"
+    "static/js/main.7ce02ce2.js"
   ]
 }
