@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import "./JobsStyle.css"
+import "./LoginStyle.css"
 import parse from 'html-react-parser';
+import GoogleLogin from 'react-google-login';
+import FacebookLogin from "react-facebook-login";
 
 export default function Login() {
     const [data, setData] = useState(null)
@@ -29,8 +32,30 @@ export default function Login() {
 
     return (
         <>
-            <div className={"content"}>
-                <div className={"job-list-detail"}>
+            <div className={"content-login"}>
+                <div className={"login"}>
+                    <h3 className={"margin-5px-0px text-dark-blue"}>Sign In</h3>
+                    <div className={"padding-5px"}>
+                        <GoogleLogin
+                            clientId="491004959702-3bgqo54pt777f77dgl7cqd6s7e7rii81.apps.googleusercontent.com"
+
+                            // buttonText={`${text.GMAIL ? ` ${text.GMAIL}` : 'LOGIN WITH GOOGLE'}`}
+                            // onSuccess={responseGoogle}
+                            // onFailure={responseGoogle}
+                            cookiePolicy={"single_host_origin"}
+                            className="GOOGLE"
+
+                        />
+                    </div>
+                    <div className={"padding-5px"}>
+                        <FacebookLogin
+                            btnContent="Facebook"
+                            appId="185202659227880"
+                            fields="name,email,picture"
+                            // onSuccess={responseFacebook}
+                            // onFailure={responseFacebook}
+                        />
+                    </div>
                 {/*    {loading ? (*/}
                 {/*            <div style={{padding: 20, textAlign: "center", fontSize: 20}}>*/}
                 {/*                <i className="fas fa-spinner fa-pulse"></i>*/}
